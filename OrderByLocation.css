@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.delhivery-body{
+
+    background: #f2f2f2;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-nav{
+    width: 70%;
+    background: #fff ;
+
+    border-radius: 15px;
+    padding: 20px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+    padding: 10px 15px;
+}
+
+.search-bar input{
+
+    flex: 1;
+    border: none;
+    outline: none;
+
+    font-size: 12px;
+}
+
+.search-bar span{
+    margin-right: 10px;
+    font: 100px;
+    cursor: pointer;
+}
+
+.search-bar img{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+/* Blue nav */
+.location-strip{
+    margin-top: 15px;
+    padding: 18px 20px;
+
+    background: #0d5c8f;
+    color: white;
+
+    border-radius: 12px;
+
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.location-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.location-icon{
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-icon img{
+    width: 20px;
+    height: 20px;
+}
+
+.location-strip span{
+    font-size: 14px;
+}
+
+
+/* Detect Button */
+.detect-btn{
+    background: transparent;
+    color: white;
+
+    border: 1px solid white;
+    padding: 6px 12px;
+
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Recent Section */
+.recent{
+    margin-top: 20px;
+}
+
+.recent-header{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    color: black;
+}
+
+.clear{
+    color: #0d5c8f;
+    cursor: pointer;
+}
+
+/* Empty Space */
+.recent-list{
+    height: 300px;
+}

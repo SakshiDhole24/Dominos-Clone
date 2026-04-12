@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominos</title>
+
+    <!-- Bootstrap css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Java Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Css link -->
+    <link rel="Stylesheet" href="Dominos.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="main-container">
+
+        <!-- Navbar -->
+
+        <nav class="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="https://www.vhv.rs/dpng/d/57-578454_dominos-pizza-hd-png-download.png" alt="Logo" width="60" height="30" class="d-inline-block align-text-top"></a>
+                
+                <form class="searchbar" role="search">
+                    <input class="form-input-pizza" type="search" placeholder="Search Pizza"/>
+                    <button class="form-button-pizza" type="submit">Search</button>
+                </form>
+                
+                <a class="location-btn" href="#"><button>Detect Location</button></a>
+
+                <!-- Hidden checkbox -->
+                <input type="checkbox" id="menu-toggle">
+                <!-- Icon -->
+                <label for="menu-toggle" class="nav-icon">
+                    <i class="fa-solid fa-user"></i>
+                </label>
+
+                <!-- Overlay -->
+                <label for="menu-toggle" class="overlay"></label>
+
+                <!-- Sidebar -->
+                <div class="sidebar">
+
+                    <!-- Top header -->
+                    <div class="sidebar-header">
+                        <div class="profile">
+                            <i class="fa-solid fa-user"></i>
+                            <div>
+                                <p class="title">Login for Exclusive Offers</p>
+                                <span>Get coupons & track orders</span>
+                            </div>
+                        </div>
+                        <button class="login-btn">Login</button>
+                    </div>
+
+                    <!-- Menu -->
+                    <ul class="menu-list">
+                        <li>Deals & Offers</li>
+                        <li>Track Order</li>
+                        <li>Order History</li>
+                        <li>Feedback</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar 2 -->
+
+        <div class="another-navbar">
+            <div class="card text-bg-dark">
+                <a href="OrderByLocation.html">
+                    <h6 class="card-title">Delhivery</h6>
+                    <p class="card-text">Now</p>
+                </a>  
+            </div>
+
+            <div class="card">
+                <a href="OrderByLocation.html">
+                    <h6 class="card-title" style="color: black;">Takeaway</h6>
+                    <p class="card-text" style="color: black;"> Select Store</p>
+                </a>
+            </div>
+
+            <div class="card">
+                <a href="OrderByLocation.html">
+                    <h6 class="card-title" style="color: black;">Dine-in</h6>
+                    <p class="card-text" style="color: black;">Select Store</p>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- Carousel -->
+
+        <div id="carouselExampleIndicators" 
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-size">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?crop=entropy&fit=crop&w=1600&h=900" class="carousel-img" alt="">
+                </div>
+                <div class="carousel-item carousel-size">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?crop=entropy&fit=crop&w=1600&h=900" class="carousel-img" alt="">
+                </div>
+                <div class="carousel-item carousel-size">
+                    <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?crop=entropy&fit=crop&w=1600&h=900" class="carousel-img" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <br>
+
+        <!-- Lists  -->
+
+        <div class="list">
+            <h4 class="H3Craving" style="margin: 0px 0px 12px; padding: 0px 10px ;">What are you Craving for?</h4>
+
+            <div class="list-group">
+                <a href="CheeseLava.html" class="list-group-item list-group-item-action"><img src="https://th.bing.com/th/id/OIP.IuwiTE8fd-OtAn0Z3EYarwHaEK?w=307&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Cheese Lava</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.I-TrGXBK4GKD38-9qUXbNgHaHa?w=162&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" ><br>  Big Big Pizza</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.f8SFCtPVg_bE7mG6xy_fRwHaHa?w=149&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > <br> 5 Course Meal</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.0jTh6fU2iluDkhftY6yu3AHaEK?w=311&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Veg Pizza</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.MrEcUea8C3BU4dvqNzmvUQHaE9?w=231&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Pizza Mania</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.ck3Op46RIEIKBcFpf60UsgHaEK?w=269&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Garlic Bread & Dips</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.vH9BnZv1_lkGqlvGl5NabAHaE8?w=278&h=185&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Cheese Burst Pizza</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP._Sor39EcCPWnz7VXFwOj7AHaEK?w=326&h=183&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Crazy Deals</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.njfFzcygAaV7rkkKOcBvTAHaD4?w=329&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Cheese Volcano</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP.ps1mk-roTs6T0LegJVRqfgHaEK?w=275&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Desserts</a>
+                <a href="#" class="list-group-item list-group-item-action "><img src="https://th.bing.com/th/id/OIP._PwwBSZiXb5bbagyCtDT3QHaHa?w=166&h=180&c=7&r=0&o=7&pid=1.7&rm=3" class="Pizza-icon" alt="" > Tacos & Parcels</a>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- Cards -->
+
+        <div class="Cheader"  style="margin: 0px 0px 12px; padding: 0px 10px ;">
+            <h5 style="color: black;">What's New</h5>
+        </div>
+        <div class="Cards">
+            <div class="card1" style="width: 18rem;">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Sunday_Special_offers_AC_202410201729399304_202410211729485978_202410221729573259_202411201732090902_202412261735198159_202503181742280842_202503181742280870.jpg?ver=0.0.1" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card1" style="width: 18rem;">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Dominos_Cheese-Burst-AC_202410241729754536.JPG?ver=0.0.1" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card1" style="width: 18rem;">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Domino%2527s_cheese-volcano-revamp_AC_202409301727679855_202411081731063825.jpg?ver=0.0.1" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card1" style="width: 18rem;">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/Chocolava_KV_App_Carousel_400x220px_202409301727679882_202410011727758996_202410011727766705_202410091728451033_202410151728996299_202410161729071005_202410241729754696_202411071730957121_202503181742281735_202503191742361186.jpg?ver=0.0.1" class="card-img-top" alt="...">
+            </div>
+
+            <div class="card1" style="width: 18rem;">
+                <img src="https://api.dominos.co.in/prod-olo-api/images/dynamicOffers/cheese_rewards_corousal_202210201666257463_202503181742281667.jpg?ver=0.0.1" class="card-img-top" alt="...">
+            </div>
+        </div>
+
+        <br>
+
+
+         <!-- Title of cards -->
+
+         <div class="top-image">
+            <img src="https://cdn.jflimages.co.in/prod-olo-api/contents/home-cms/aAkqT7DxtxYFTQfcAuPU9XM1e2zYY21KngQDeXBz.png" class="top-image-bestseller" alt="">
+            <h4 style="color: rgb( 133, 83, 34);">Top 10 Bestsellers</h4>
+            <div class="loc-div" >
+                <img src="https://cdn.jflimages.co.in/prod-olo-api/contents/home-cms/Jt5wBlQqchbiHVtrYZEUchzYjUD2PIxkOcMpSrGv.png" style="height: 20px; width: 20px;" alt="">
+                In Your Locality
+            </div>
+
+            <br>
+
+            <!-- Another cards with button -->
+            <div class="cardHolder">
+                <!-- Card 1 -->
+                <div class="card2">
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/05e8ba85-4444-4c19-b085-8012f1baf0b4_margherita_side.webp?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Marghrita</h5>
+                            <p class="card-text">Classic deloght with 100% real mozzrella cheese.</p>
+                            <hr>
+                            <h6>₹109</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a52b70f2-01cb-42b8-ae4f-566df999115c_farmhouse_side.webp?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Farmhouse</h5>
+                            <p class="card-text">Delightful combination of onion, capsicum, tomato &grilled mushroom.</p>
+                            <hr>
+                            <h6>₹259</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card2">
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/ff2e39b8-87cc-4f3f-a2f5-06198a85f3df_peppy_paneer_side.webp?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Peppy Paneer</h5>
+                            <p class="card-text">Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika.</p>
+                            <hr>
+                            <h6>₹269</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a542d031-5fc8-4902-bbb3-25eebd3ace7e_veggie_paradise_side.webp?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Veggie Paradise</h5>
+                            <p class="card-text">The awesome foursome! Golden corn, black olives, capsicum, red paprika.</p>
+                            <hr>
+                            <h6>₹269</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/8abd61ff-024b-45fe-a221-6b72d601cb49_indi_paneer_side_full.webp?ver=V0.0.1" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Indi Tandoori Paneer</h5>
+                            <p class="card-text">It is hot. It is spicy. It is oh-so-Indian. Tandoori paneer with capsicum, red paprika & mint mayo.</p>
+                            <hr>
+                            <h6>₹319</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/1fd7cfcb-75e7-45b1-94d5-b54d32cf814e_PMGoldenCornHome.jpg?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Golden Corn</h5>
+                            <p class="card-text">Sweet & juicy golden corn for that lipsmacking taste.</p>
+                            <hr>
+                            <h6>₹89</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/e56f74ff-ae78-453d-bf34-3dbba00c8e6a_PM_onion_side.webp?ver=V0.0.1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Onion</h5>
+                            <p class="card-text">Our classic Pizza Mania topped with crunchy Onions.</p>
+                            <hr>
+                            <h6>₹69</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a718c4d8-de90-476b-b9fc-7e6b42fc6ffe_plain_GB_side.webp?ver=V0.0.1" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Garlic Breadsticks</h5>
+                            <p class="card-text">Backed to perfection. Your perfect pizza partner! Tastes best with dip.</p>
+                            <hr>
+                            <h6>₹119</h6>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card2" >
+                    <img src="https://cdn.jflimages.co.in/nextgen-catalog/media/prod/Dominos/WebHomeProductV1/a1b4e8c0-3cb5-44f2-b6e3-68ad58ce6ff2_zingy_parcel_v_side.webp?ver=V0.0.1" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Veg Parcel</h5>
+                            <p class="card-text">Snacky bites! Pizza rolls with paneer and creamy harissa sauce.</p>
+                            <hr>
+                            <h6>₹49</h6>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Card 10 -->
+                <div class="card2">
+                    <img src="https://th.bing.com/th/id/OIP.lCTs-qhdTtsTLs4mEXLrkQHaE8?w=263&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="...">
+                    <div class="card-body">
+                        <div class="img-text-left">
+                            <h5 class="card-title">Paneer and Capsicum with Videshi Hot Sauce</h5>
+                            <p class="card-text">Internationally inspired Hot sauce to cater your spice cravings loaded with juicy Paneer and crisp Capsicum..</p>
+                            <hr>
+                            <h6>₹109</h6>
+                            <span>Regular | New Hand Tossed</span>
+                        </div>
+
+                        <div class="img-text-right">
+                            <a href="#" class="btn btn-primary">Add +</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="footer-item active">
+                <span> &#x1F355; </span>
+                <p>Menu</p>
+            </div>
+
+            <div class="footer-item active">
+                <span> 🔥 </span>
+                <p>Offers</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

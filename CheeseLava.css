@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.cheese-lava-body{
+    margin: 10px;
+    padding: 10px;
+}
+/* Main Heading */
+.main-heading{
+    margin-left: 10px
+}
+
+/* Category */
+.food-icon{
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.food-icon img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+/* Food Items */
+.category-scrollbar{
+    margin: 0;
+    height: 50px;
+    width: 100%;
+    font-size: 15px;
+
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    white-space: nowrap;
+
+    overflow-x: auto;  
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding-left: 20px 15px;
+}
+
+/* Cards */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 420px);
+    gap: 15px;
+
+    justify-content: start;
+    padding: 20px;
+}
+
+.card-cheese{
+    display: flex;
+    width: 420px;
+    height: 300px;
+
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-cheese img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Text Overlay */
+.card-cheese-body{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    padding:  12px;
+    color: white;
+    text-align: left;
+
+    background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+}
+
+/* Left content */
+.card-cheese-img-text-left h5{
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-cheese-img-text-left p{
+    margin: 5px 0;
+    font-size: 13px;
+}
+
+.card-cheese-img-text-left h6{
+    margin:  5px 0;
+}
+
+.card-cheese-img-text-left span{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* Right button */
+.card-cheese-img-text-right a{
+    background: #e31837;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    width: 90px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
