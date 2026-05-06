@@ -473,6 +473,11 @@
     z-index: pointer;
 }
 
+.menu-list{
+    color: #555;
+    text-decoration: none;
+}
+
 /* Each item */
 .footer-item{
     text-align: center;

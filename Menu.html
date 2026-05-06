@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap css CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Bootstrap Java Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <!-- Css link -->
+    <link rel="Stylesheet" href="Menu.css">
+
+    <!-- Java Script link -->
+    <script src="Menu.js"></script>
+
+</head>
+<body>
+    <div class="menu-body">
+        <!-- Main Heading -->
+        <div class="main-heading">
+            <h5>Domino's Pizza </h5>
+        </div>
+
+        <br>
+
+        <!-- Category Navbar -->
+        <div>
+            <div class="food-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Veg_symbol.svg" class="food-icon">  Veg Only</div>
+            <div class="food-icon"><img src="https://th.bing.com/th/id/OIP.xioEnkIQfmM28mjAQZGJTgHaI1?w=168&h=150&c=6&o=7&pid=1.7&rm=3" class="food-icon"> Non-Veg Only </div>
+            <div class="food-icon"> Sort by ↑↓</div>
+        </div>
+
+        <hr>
+
+        <!-- Food Items list -->
+        <div class="category-scrollbar">
+            <ul>
+                <li onclick="showCategory('cheese-lava', this)" class="active"> Cheese Lava </li>
+                <li onclick="showCategory('big-big-pizza', this)"> Big Big Pizza </li>
+                <li onclick="showCategory('5-course-meal', this)">5 Course Meal</li>
+                <li onclick="showCategory('veg-pizza', this)">Veg Pizza</li>
+                <li onclick="showCategory('non-veg-pizza', this)">Non-Veg Pizza</li>
+                <li onclick="showCategory('pizza-mania', this)">Pizza Mania</li>
+                <li onclick="showCategory('garlic-breads-&-dips', this)">Garlic Breads & Dips</li>
+                <li onclick="showCategory('cheese-burst-pizza', this)">Cheese Burst Pizza</li>
+                <li onclick="showCategory('crazy-deals', this)">Crazy Deals</li>
+                <li onclick="showCategory('cheese-volcano', this)">Cheese Volcano</li>
+                <li onclick="showCategory('desserts', this)">Desserts</li>
+                <li onclick="showCategory('tacos-&-parcels', this)">Tacos & Parcels</li>
+                <li onclick="showCategory('beverages', this)">Beverages</li>
+                <li onclick="showCategory('no-onion-no-garlic', this)">No Onion No Garlic</li>
+            </ul>
+        </div>
+
+        <!-- Cheese have heading -->
+        <div class="category-heading">
+            <h2 id="category-title">Cheese Lava</h2>
+        </div>
+        
+        <!-- Cheese-Lava -->
+        <div id="cheese-lava" class="category-section">
+            <div class="card-container">
+
+            </div>
+        </div>
+
+        <!-- Big-Big-Pizza -->
+        <div id="big-big-pizza" class="category-section" style="display: none;">
+            <div class="card-container">
+            
+            </div>
+        </div>
+
+        <!-- 5 Course Meal -->
+        <div id="5-course-meal" class="category-section" style="display: none;">
+            <div class="card-container">
+
+            </div>
+        </div>
+
+        <!-- Veg Pizza -->
+        <div id="veg-pizza" class="category-section" style="display: none;">
+            <div class="card-container">
+
+            </div>
+        </div>
+
+        <!-- Non-veg Pizza -->
+        <div id="non-veg-pizza" class="category-section" style="display: none;">
+            <div class="card-container">
+                
+
+            </div>
+        </div>
+
+        <!-- Pizza mania -->
+        <div id="pizza-mania" class="category-section" style="display: none;">
+            <div class="card-container">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
